@@ -8,14 +8,40 @@
 }
 
 .side-bar-header{
-  background-color: #253141;
   height: 100px;
   padding: 0 20px;
+  background-color: #253141;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.side-bar-header a{
+text-decoration: none;
+}
+
+.header-name{
+  size: 16px;
+  color: #fafafa;
+}
+
+.create-rooom{
+size: 10px;
+color: #fafafa;
+border: 1px solid lightblue;
+border-radius: 4px;
+padding: 14px;
+}
+
 .rooms{
   background-color: #2f3e51;
   height: calc(100vh - 100px);
   padding: 0 20px;
+}
+
+.room-name{
+  color: white;
+  padding: 20px 0 40px;
 }
 
 .chat {
