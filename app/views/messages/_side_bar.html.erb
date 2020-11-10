@@ -1,9 +1,12 @@
 <div class="side-bar-header">
-  <a href="#" class="header-name">Tom</a>
+  <% #binding.pry %>
+  <%= link_to current_user.name, edit_user_path(current_user),class:"header-name" %>
   <a href="#" Class="create-rooom">チャットを作成する</a>
 </div>
 <div class="rooms">
-  <p class="room-name">techroom1</p>
-  <p class="room-name">techroom2</p>
-  <p class="room-name">techroom3</p>
+  <% 5.times do |n| %>
+  <p class="room-name">
+  <%= "techroom#{n+1}" %>
+  </p>
+<% end %>
 </div>
