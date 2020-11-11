@@ -5,16 +5,11 @@ class RoomsController < ApplicationController
 
   def create
     @room = Room.new(room_params)
-    if @room.user_ids.length == 2
-      if @room.save
+      if  @room.user_ids.length >= 2 && @room.save
         redirect_to root_path
       else
         render action: :new
       end
-    else
-      render action: :new
-      # redirect_to action: :new
-    end
   end
 
   private
