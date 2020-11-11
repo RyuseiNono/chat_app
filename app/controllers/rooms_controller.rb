@@ -9,6 +9,7 @@ class RoomsController < ApplicationController
         redirect_to root_path
       else
         render action: :new
+        # redirect_to new_room_path
       end
   end
 

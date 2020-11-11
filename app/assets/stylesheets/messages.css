@@ -16,8 +16,10 @@
   align-items: center;
 }
 
-.side-bar-header a{
+.header-name a,
+.create-room a{
 text-decoration: none;
+color: #fafafa;
 }
 
 .header-name{
@@ -25,7 +27,7 @@ text-decoration: none;
   color: #fafafa;
 }
 
-.create-rooom{
+.create-room{
 size: 10px;
 color: #fafafa;
 border: 1px solid lightblue;
@@ -37,12 +39,18 @@ padding: 14px;
   background-color: #2f3e51;
   height: calc(100vh - 100px);
   padding: 0 20px;
+  overflow: scroll;
 }
 
 .room-name{
-  color: white;
   padding: 20px 0 40px;
 }
+
+.room-name a{
+  color: white;
+  text-decoration: none;
+}
+
 
 .chat {
   background-color: #ffffff;
