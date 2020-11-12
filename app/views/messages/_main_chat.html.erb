@@ -10,22 +10,8 @@
   </div>
 </div>
 
-
 <div class="messages">
-<% 30.times do |n|%>
-  <div class="message">
-    <div class="upper-message">
-      <div class="message-user">AMANO</div>
-      <div class="message-date">2020/11/11 11:11:11</div>
-    </div>
-
-    <div class="lower-message">
-      <div class="message-content">
-        <%= "おはよう#{n}" %>
-      </div>
-    </div>
-  </div>
-<% end %>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
